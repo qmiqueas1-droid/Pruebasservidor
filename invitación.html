@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Aniversario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #fffaf0 0%, #fff5ee 100%);
+        }
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+        .gold-border {
+            border: 2px solid #d4af37;
+        }
+        .rose-gold-bg {
+            background-color: #b76e79;
+        }
+        .rose-gold-text {
+            color: #b76e79;
+        }
+        .decorative-border {
+            border: 3px double #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="decorative-border bg-white max-w-2xl w-full p-8 md:p-12 rounded-lg shadow-xl">
+        <!-- Encabezado decorativo -->
+        <div class="text-center mb-8">
+            <div class="flex justify-center mb-4">
+                <svg class="w-12 h-12 rose-gold-text" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <h1 class="dancing-font text-4xl md:text-5xl rose-gold-text font-bold mb-2">
+                Invitación Especial
+            </h1>
+            <p class="text-gray-600">Celebremos juntos nuestro amor</p>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="text-center mb-8">
+            <h2 class="dancing-font text-3xl md:text-4xl text-gray-800 mb-4">
+                Evaristo & Nicolasa
+            </h2>
+            <div class="gold-border rounded-lg p-6 mb-6">
+                <p class="text-lg text-gray-700 mb-2">Con gran alegría queremos compartir con ustedes</p>
+                <p class="text-2xl rose-gold-text font-semibold mb-4">Nuestro Aniversario de Bodas</p>
+                <div class="space-y-2">
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Fecha:</span> Sábado, 27 de Septiembre 2024
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Hora:</span> 20:00 PM
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Lugar:</span> Rancho Don Segundo, Campo Quikano
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-semibold">Nota:</span> Confirmar asistencia y se le inviara ubicación 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elementos decorativos -->
+        <div class="flex justify-center space-x-6 mb-8">
+            <svg class="w-8 h-8 rose-gold-text" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9 12 2 12l7 6-2 10 8-6 8 6-2-10 7-6-7 0-3-10z"/>
+            </svg>
+            <svg class="w-8 h-8 rose-gold-text" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9 12 2 12l7 6-2 10 8-6 8 6-2-10 7-6-7 0-3-10z"/>
+            </svg>
+            <svg class="w-8 h-8 rose-gold-text" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9 12 2 12l7 6-2 10 8-6 8 6-2-10 7-6-7 0-3-10z"/>
+            </svg>
+        </div>
+
+        <!-- Confirmación -->
+        <div class="text-center">
+            <p class="text-gray-600 mb-4">Por favor confirma tu asistencia antes del 22 de septiembre</p>
+            <div class="space-y-3">
+                <button class="rose-gold-bg hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Confirmar Asistencia
+                </button>
+                <p class="text-sm text-gray-500">o envía un mensaje al +54 9 3875914553</p>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div class="text-center mt-8 pt-4 border-t border-gray-200">
+            <p class="text-sm text-gray-500">¡Esperamos compartir este momento especial contigo!</p>
+            <p class="text-xs text-gray-400 mt-2"></p>
+        </div>
+    </div>
+
+    <script>
+        // Script simple para el botón de confirmación
+        document.querySelector('button').addEventListener('click', function() {
+            const phoneNumber = '5493875914553';
+            const message = 'Hola! Confirmo mi asistencia a su aniversario.';
+            const whatsappURL = `https://wa.me/5493875914553?text=Hola%20quiero%20confirmar%20mi%20asistencia`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
